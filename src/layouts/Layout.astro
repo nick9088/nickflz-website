@@ -1,0 +1,31 @@
+---
+import "../styles/global.css";
+import Navbar from "../components/Navbar.astro";
+import { ClientRouter } from "astro:transitions";
+import { fade } from "astro:transitions";
+import Footer from "../components/Footer.astro";
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Nick Falza - home</title>
+	</head>
+	<body class="bg-zinc-900 text-white mx-auto max-w-screen-md text-xl">
+		<Navbar />
+		<div class="container" transition:animate={fade({ duration: "0.4s" })}>
+			<slot />
+			<ClientRouter />
+		</div>
+		<Footer />
+	</body>
+</html>
+<style>
+	body {
+		padding: 0 1.5rem 1.5rem 1.5rem;
+	}
+</style>
