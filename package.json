@@ -9,10 +9,10 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/prism": "^3.2.0",
+    "@astrojs/prism": "^3.3.0",
     "@iconify-json/mdi": "^1.2.3",
     "@tailwindcss/vite": "^4.1.4",
-    "astro": "^5.7.0",
+    "astro": "^5.8.0",
     "astro-icon": "^1.1.5",
     "tailwindcss": "^4.1.4"
   }
