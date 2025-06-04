@@ -1,5 +1,5 @@
 {
-  "name": "nickflz-website",
+  "name": "code",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
@@ -9,11 +9,8 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/prism": "^3.3.0",
-    "@iconify-json/mdi": "^1.2.3",
-    "@tailwindcss/vite": "^4.1.4",
-    "astro": "^5.8.0",
-    "astro-icon": "^1.1.5",
-    "tailwindcss": "^4.1.4"
+    "@tailwindcss/vite": "^4.1.8",
+    "astro": "^5.8.2",
+    "tailwindcss": "^4.1.8"
   }
 }

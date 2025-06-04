@@ -1,9 +1,9 @@
 ---
-import "../styles/global.css";
+import './src/styles/global.css';
 import Navbar from "../components/Navbar.astro";
+import Footer from '../components/Footer.astro';
 import { ClientRouter } from "astro:transitions";
 import { fade } from "astro:transitions";
-import Footer from "../components/Footer.astro";
 ---
 
 <!doctype html>
@@ -16,16 +16,19 @@ import Footer from "../components/Footer.astro";
 		<title>FLZA</title>
 	</head>
 	<body class="bg-black text-white mx-auto max-w-screen-md text-xl">
-		<Navbar />
-		<div class="container" transition:animate={fade({ duration: "0.4s" })}>
+		<Navbar></Navbar>
+		<div transition:animate={fade({ duration: "0.4s" })}>
 			<slot />
 			<ClientRouter />
 		</div>
-		<Footer />
+		<Footer></Footer>
 	</body>
 </html>
+
 <style>
+	@import url('https://fonts.cdnfonts.com/css/aktiv-grotesk-cd-trial');
 	body {
 		padding: 0 1.5rem 1.5rem 1.5rem;
+		font-family: 'Aktiv Grotesk Trial', sans-serif;
 	}
 </style>

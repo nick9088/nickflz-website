@@ -1,15 +1,6 @@
----
-import Avatar from "./Avatar.astro";
----
 <nav class="sticky py-5 mt-10">
-    <div class="flex items-center">
-        <Avatar class="w-20 rounded-full border-3 block" width={50} height={50}></Avatar>
-        <div class="ml-4">
-            <!-- Add margin to the left for spacing -->
-            <h1 class="text-3xl font-bold">FLZA</h1>
-            <span class="flex italic text-gray-400">(he/him)</span>
-        </div>
-    </div>
+    <img class="navlogo py-2" src="/logonav.svg">
+    <a class="flex italic text-gray-300" href="/secret-downloads">// the italian mf</a>
     <ul class="flex justify-start py-2 gap-4">
         <li>
             <a
@@ -34,3 +25,9 @@ import Avatar from "./Avatar.astro";
         </li>
     </ul>
 </nav>
+
+<style>
+    .navlogo {
+        width: 100px;
+    }
+</style>
